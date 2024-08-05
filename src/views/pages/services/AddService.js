@@ -314,7 +314,7 @@ export default function AddService() {
                                     <div className="mb-3">
                                         <label htmlFor="duration" className="form-label">Duration</label>
                                         <input
-                                            type="text"
+                                            type="number"
                                             name="duration"
                                             value={formData.duration}
                                             onChange={handleChange}
@@ -326,7 +326,7 @@ export default function AddService() {
                                     <div className="mb-3">
                                         <label htmlFor="price" className="form-label">Price</label>
                                         <input
-                                            type="text"
+                                            type="number"
                                             onChange={handleChange}
                                             name="price"
                                             value={formData.price}
@@ -358,7 +358,7 @@ export default function AddService() {
                                     <div className="mb-3">
                                         <h5>Pickups</h5>
                                         <label htmlFor="numberOfPickups" className="form-label">Number of Pickup Locations</label>
-                                        <input type="text" name="numberOfPickups" value={formData.numberOfPickups} onChange={handleChange} placeholder="Number of Pickup locations (Example - 2)" className="form-control mb-3" />
+                                        <input type="number" name="numberOfPickups" value={formData.numberOfPickups} onChange={handleChange} placeholder="Number of Pickup locations (Example - 2)" className="form-control mb-3" />
                                         {renderPickupInputs()}
                                     </div>
 
